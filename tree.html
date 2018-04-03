@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>walk cicle</title>
+        <style>
+            *{box-sizing: border-box;}
+            #tree{
+                position: relative;
+                width:100%;
+                height:252px;
+                background-image: url(tree.png);
+
+            }
+            #tree:hover{
+                 animation: moveLeft 8s linear infinite forwards;
+            }
+
+            @keyframes moveLeft{
+                to{
+                    background-position: -400px;
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="tree">
+
+        </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>walk cicle</title>
+
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            #man{
+                width:120px;
+                height:180px;
+                overflow:hidden;
+                border: 1px solid red;
+            }
+            #man img{
+                animation: walk .8s steps(8) infinite;
+            }
+
+            @keyframes walk{
+                to{
+                    transform: translate(-960px);
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="man">
+            <img src="walking.png" alt="walk cicle">
+        </div>
+        <img src="walking.png" alt="sprite sheet">
+
+
+
+    </body>
+</html>

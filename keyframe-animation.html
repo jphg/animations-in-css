@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes animation</title>
+    <style>
+        #box{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+        #box:target{
+            animation: move 2s ease forwards;
+        }
+        @keyframes move{
+
+            20%{
+                transform: translate(200px);
+            }
+            50%{
+               transform: translate(500px);
+            }
+            100%{
+                transform: translate(950px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#box"><div id="box">
+
+    </div></a>
+    <a href="#stop">clear</a>
+
+</body>
+</html>
